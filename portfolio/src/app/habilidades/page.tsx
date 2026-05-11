@@ -26,8 +26,8 @@ export default function HabilidadesPage() {
 
         <div className="w-full lg:w-[450px] aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden relative border border-white/5 bg-surface-container shadow-2xl">
           <Image
-            src="/profile.png"
-            alt="Mi retrato profesional"
+            src="/frontend_skills.png"
+            alt="Ilustración de habilidades Frontend"
             fill
             sizes="(max-width: 1024px) 100vw, 450px"
             className="object-cover object-center"

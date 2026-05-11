@@ -16,14 +16,23 @@ export async function getGithubRepos(username: string): Promise<Project[]> {
   return data.map((repo: any) => {
     // Asignar imágenes específicas según el nombre del repo
     let customImage = `https://opengraph.githubassets.com/1/${username}/${repo.name}`;
-    if (repo.name === 'Portfolio') customImage = '/projects/portfolio_cover.png';
-    else if (repo.name === 'Proyecto-IA') customImage = '/projects/ai_project_cover.png';
-    else if (repo.name === 'Proyecto-Final') customImage = '/projects/final_project_cover.png';
+    let customDescription = repo.description;
+
+    if (repo.name === 'Portfolio') {
+      customImage = '/projects/portfolio_cover.png';
+      customDescription = 'Portfolio web personal desarrollado con Next.js, React y Tailwind CSS. Diseñado con un enfoque moderno y cinemático para mostrar mis proyectos.';
+    }
+    else if (repo.name === 'Proyecto-IA') {
+      customImage = '/projects/ai_project_cover.png';
+    }
+    else if (repo.name === 'Proyecto-Final') {
+      customImage = '/projects/final_project_cover.png';
+    }
 
     return {
       id: repo.id.toString(),
       title: repo.name,
-      description: repo.description,
+      description: customDescription || 'Sin descripción disponible.',
       url: repo.html_url,
       language: repo.language,
       imageUrl: customImage

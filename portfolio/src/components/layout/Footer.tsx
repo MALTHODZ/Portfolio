@@ -10,13 +10,12 @@ export function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-6 text-sm font-semibold tracking-wide text-on-surface-variant">
-          <a href="mailto:emprendedorxavier@gmail.com" className="hover:text-primary transition-colors">
-            emprendedorxavier@gmail.com
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+          <span >emprendedorxavier@gmail.com</span>
+
+          <a href="https://www.linkedin.com/in/xavier-santiago-aguil%C3%B3-26621b247/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             LinkedIn
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+          <a href="https://github.com/repos?q=owner%3A%40me" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             GitHub
           </a>
         </div>

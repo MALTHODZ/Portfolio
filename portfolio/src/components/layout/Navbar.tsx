@@ -47,7 +47,7 @@ export function Navbar() {
 
       <div className="hidden md:block">
         <a href="/curriculum.pdf" className="px-6 py-2.5 font-body text-sm font-semibold bg-primary text-on-primary rounded-md hover:bg-primary-container transition-colors shadow-[0_0_15px_rgba(129,236,255,0.15)]">
-          Curriculum
+          CV
         </a>
       </div>
     </nav>
